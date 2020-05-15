@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress ALL -->
+<equipment>
+<part id="1">
+<partname>LEFT TIRE (FRONT)</partname>
+<type>checkbox</type>
+</part>
+
+
+
+<part id="2">
+<partname>LEFT EXTERIOR</partname>
+<type>checkbox</type>
+</part>
+
+<part id="3">
+<partname>UNDERCARRAIGE</partname>
+<type>checkbox</type>
+</part>
+
+
+<part id="4">
+<partname>FIRE EXTINGUISHER</partname>
+<type>checkbox</type>
+</part>
+
+<part id="5">
+<partname>LEFT TIRE (REAR)</partname>
+<type>checkbox</type>
+</part>
+
+<part id="6">
+<partname>OPS. MANUAL</partname>
+<type>checkbox</type>
+</part>
+
+
+<part id="7">
+<partname>MIRRORS</partname>
+<type>checkbox</type>
+</part>
+
+
+<part id="8">
+<partname>HYD OIL LEVEL</partname>
+<type>checkbox</type>
+</part>
+
+<part id="9">
+<partname>ATTACHMENT</partname>
+<type>checkbox</type>
+</part>
+
+<part id="10">
+<partname>RIGHT TIRE (FRONT)</partname>
+<type>checkbox</type>
+</part>
+
+<part id="11">
+<partname>RIGHT EXTERIOR</partname>
+<type>checkbox</type>
+</part>
+
+<part id="12">
+<partname>CAB DOORS</partname>
+<type>checkbox</type>
+</part>
+
+
+<part id="13">
+<partname>CAB GLASS</partname>
+<type>checkbox</type>
+</part>
+
+<part id="14">
+<partname>SEAT(RIPS,TEARS,ETC.)</partname>
+<type>checkbox</type>
+</part>
+
+
+<part id="15">
+<partname>RIGHT TIRE (REAR)</partname>
+<type>checkbox</type>
+</part>
+
+
+<part id="16">
+<partname>BATT WATER</partname>
+<type>checkbox</type>
+</part>
+
+
+</equipment>

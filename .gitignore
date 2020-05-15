@@ -1,0 +1,5 @@
+# Project exclude paths
+/build/
+/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/zbar/build/
+/zbar/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/

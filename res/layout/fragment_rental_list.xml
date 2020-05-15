@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/rental_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp"
+        tools:listitem="@layout/activity_customer_list_view"
+        tools:ignore="RtlHardcoded">
+    </ListView>
+
+</RelativeLayout>

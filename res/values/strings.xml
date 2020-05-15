@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<resources>
+
+    <string name="app_name">e-Sign</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="userName">Username</string>
+    <string name="passWord">Password</string>
+    <string name="poweredBy">Powered By EBS Mechdata Inc.</string>
+    <string name="save">Save</string>
+    <string name="walkaround"> Walk Around</string>
+
+    <string name="textURL">Set URL to access the data \n Example: http://example.com/eSign</string>
+    <string name="back">Back</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+
+    <!-- Rental -->
+    <string name="date">Date</string>
+    <string name="onsite">On Site</string>
+    <string name="yard">Yard</string>
+    <string name="location">Location</string>
+    <string name="equipmentId">Equipment Id</string>
+    <string name="delivery">Delivery</string>
+    <string name="inspection_return">Return</string>
+    <string name="hourMeter">Hour meter</string>
+    <string name="replacement">Replacement</string>
+    <string name="operator_availabilty">Operator Present</string>
+    <string name="return_reason">Reason For Return</string>
+    <string name="job_complete">Job Complete</string>
+    <string name="pm_other">P.M/Other</string>
+    <string name="equipmemt_failure">Equipment Failure</string>
+    <string name="wear_tear">Wear &#38; Tear</string>
+    <string name="breakage">Breakage</string>
+    <string name="customer_damage">Customer Damage</string>
+    <string name="customer_rep">Representative</string>
+    <string name="customer_operator">Operator</string>
+    <string name="inspection_front">Front</string>
+    <string name="next">Next</string>
+    <string name="engine">ENGINE(START,RUN,STOP)</string>
+    <string name="controls">CONTROLS &#38; SWITCHES</string>
+    <string name="lights">LIGHTS,HORN,B.U.ALARM</string>
+    <string name="seatbelt">SEATBELT/SAFETYCHAIN</string>
+    <string name="drive">DRIVE(FWD/BCK/R/L)</string>
+    <string name="lift">(FORKS/BOOM/PLATFORM)</string>
+    <string name="cab">CABOPERATION(SWIVEL)</string>
+    <string name="brake">BRAKE &#38; PARKINGBRAKE</string>
+    <string name="hugg">Hugg &#38; Hall Rep</string>
+    <string name="notes">Notes</string>
+    <string name="inspection_description">Description</string>
+    <string name="inspection_descrepencies">Descrepencies</string>
+    <string name="partsimage">Parts Image</string>
+    <!--<string name="maps_api_key">AIzaSyC_o-9YVi7r3DfPTOfJ7qHky6s_clDLPSg</string>-->
+    <string name="maps_api_key">AIzaSyDOFIGDZDm87A0C9b3JZn2wPIqEVCyEbTM</string>
+    <!-- Image Capture -->
+
+    <string name="select_gallery">Choose from gallery</string>
+    <string name="take_photo">Take photo</string>
+
+    <string-array name="inspection_check">
+        <item>Good</item>
+        <item>N/A</item>
+        <item>Repair</item>
+    </string-array>
+    <string-array name="partscheck_arrays">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <!-- Fragments -->
+    <string name="submit">Submit</string>
+
+    <!-- List Verification -->
+    <string name="customer_name">Customer Name</string>
+    <string name="rental_id">Rental Id</string>
+    <string name="equipment_id">Equipment Id</string>
+
+    <!-- Customer List Adapter -->
+    <string name="customer_no">Customer Number</string>
+
+    <!-- Parts Capture -->
+    <string name="parts_list">Parts List</string>
+
+    <!-- Visual Inspection -->
+    <string name="part_inspect">Tap the part of equipment you want to inspect</string>
+
+    <!-- List Verification Adapter -->
+    <string name="image_description">Content Description</string>
+
+    <!-- Rental List Adapter -->
+    <string name="ship_to">Ship To Name</string>
+    <string name="rental_equipment_id">Rental Equipment Id</string>
+    <string name="rent_date">Rent Date</string>
+    <string name="description">Description</string>
+    <string name="title_activity_customized_parts_check">Rental Check-in</string>
+    <string name="title_activity_customized_operationcheck">CustomizedOperationcheck</string>
+    <string name="title_activity_rental_list_selector">Customer Name</string>
+    <string name="title_activity_rental_list_return">CheckIn</string>
+    <string name="equpment_serial_no">Equipment Serial No</string>
+    <string name="equpment_name">Equipment Name</string>
+    <string name="title_activity_root">RootActivity</string>
+    <string name="trans_list">List</string>
+    <string name="trans_map">Map</string>
+    <string name="version">V 3.1</string>
+    <string name="cancel">Cancel</string>
+
+
+</resources>

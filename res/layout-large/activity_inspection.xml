@@ -1,0 +1,73 @@
+<!--suppress ALL -->
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.ebscssp.main.InspectionActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:text="@string/back"
+                android:textStyle="bold"
+                android:visibility="invisible" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/round_button_corner"
+                android:text="@string/next"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" >
+            </Button>
+        </RelativeLayout>
+
+        <!--
+             <Button
+            android:id="@+id/btn_visual_inspection"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:background="@color/loginbtncolorgray"
+            android:text="@string/visual_inspection"
+            android:textSize="@dimen/textfieldsize"
+            android:textStyle="bold" />
+        -->
+    </LinearLayout>
+
+</ScrollView>

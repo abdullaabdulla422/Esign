@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:weightSum="10">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_blue_800"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/backicon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/back"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/backtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/material_blue_800"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/txt_header"
+            android:text="Acceptance"
+            android:layout_centerInParent="true"
+
+            android:textColor="@android:color/white"
+            android:layout_marginRight="60dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      android:scrollbars="none"
+        android:layout_weight="9.80" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_terms"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="6dp"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="2dp"
+                android:elevation="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Terms And Conditions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:textColor="@color/blackcolor"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        />
+                    <ImageView
+                        android:id="@+id/drop_down_terms"
+                        android:layout_gravity="center"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/down_arrow"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/expand_card_view_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="6dp"
+                android:visibility="visible"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="2dp"
+                android:elevation="10dp"
+                >
+                <TextView
+                    android:id="@+id/txt_tearms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9.80"
+                    android:padding="5dp"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="15sp"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/tearms_button"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/nosign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:text="No Signature could be obtained"
+                    android:textColor="@android:color/black"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+
+                    <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+                        style="@style/RippleStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+
+                        android:layout_margin="10dp">
+
+                        <Button
+                            android:id="@+id/btn_accept_terms"
+                            style="@style/btnStyleGenoa"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/round_button_corner"
+
+
+                            android:text="Accept"
+                            tools:ignore="HardcodedText,RtlHardcoded" />
+                    </com.ebs.rental.uidesigns.MaterialRippleLayout>
+                    <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+                        style="@style/RippleStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+
+                        android:layout_margin="10dp">
+
+                        <Button
+                            android:id="@+id/btn_decline"
+                            style="@style/btnStyleGenoa"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/round_button_corner"
+
+
+                            android:text="Decline"
+                            tools:ignore="HardcodedText,RtlHardcoded" />
+                    </com.ebs.rental.uidesigns.MaterialRippleLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/card_view_signature"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="6dp"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="2dp"
+                android:elevation="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Signature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:textColor="@color/blackcolor"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/drop_down_signature"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/right_arrow"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/expand_card_view_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="6dp"
+                android:visibility="gone"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="2dp"
+                android:elevation="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/pSigname"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editext_background"
+                        android:cursorVisible="true"
+                        android:ems="10"
+                        android:gravity="left|center_vertical"
+                        android:hint="SigneeName"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="Deprecated,RtlHardcoded,RtlSymmetry" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutpSign"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+
+                        android:background="@drawable/backgroundsignature"
+                        android:orientation="horizontal"
+                        android:padding="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/save"
+                            style="@style/btnStyleGenoa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:visibility="gone"
+
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:text="Save Signature"
+                            tools:ignore="HardcodedText,RtlHardcoded" />
+                        <Button
+                            android:id="@+id/clear"
+                            style="@style/btnStyleGenoa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Clear Signature"
+                            tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/card_view_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="6dp"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="2dp"
+                android:elevation="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <TextView
+                        android:text="Select Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:textColor="@color/blackcolor"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        />
+                    <ImageView
+                        android:id="@+id/drop_down_email"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/right_arrow"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/expand_card_view_email"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="6dp"
+                android:visibility="gone"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="2dp"
+
+                android:elevation="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+
+                        android:gravity="center"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mail"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_weight="2"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText"  />
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/plus_icon"
+                            android:id="@+id/img_add_mail"/>
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black"
+                        android:layout_margin="5dp"/>
+
+
+                    <ListView
+                        android:id="@+id/pmaillist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        >
+                    </ListView>
+
+                    <EditText
+                        android:id="@+id/pedtmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dip"
+                        android:layout_margin="10dp"
+                        android:visibility="gone"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/editext_background"
+                        android:cursorVisible="true"
+                        android:gravity="top"
+                        android:imeOptions="actionDone"
+                        android:hint="Enter the mail"
+                        android:singleLine="true"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:textSize="14sp"
+                        tools:ignore="Deprecated,HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+        <!--<TextView
+            android:id="@+id/txttearms"
+            android:text="Signature"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="9.80"
+            android:padding="5dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:textColor="@color/blackcolor"
+            android:textSize="15sp"
+            tools:ignore="ObsoleteLayoutParam" />-->
+    </ScrollView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:id="@+id/submit_button"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/btnStyleGenoa"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Submit"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/btnStyleGenoa"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Cancel"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

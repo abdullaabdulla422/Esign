@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:ignore="Overdraw">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:background="@color/material_blue_800">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="Walk Around Inspection"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            tools:ignore="Deprecated,HardcodedText,SpUsage" />
+
+        <ImageView
+            android:id="@+id/rental_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/back"
+
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/rental_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/rental_close"
+            android:text="Back"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="EquipID : "
+            android:layout_weight=".5"
+            android:textColor="@color/blackcolor"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/equip_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:text=""
+            android:textColor="@color/blackcolor"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/lnr_section"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:text="Section :"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="12dp"
+                    tools:ignore="HardcodedText,NestedWeights,SpUsage" />
+
+
+                <TextView
+                    android:id="@+id/txt_section"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:text=""
+                    android:textColor="@color/blackcolor"
+                    android:textSize="12dp"
+                    tools:ignore="SpUsage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lnr_spot"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".45"
+                    android:text="Spot :"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="12dp"
+                    tools:ignore="HardcodedText,NestedWeights,SpUsage" />
+
+                <TextView
+                    android:id="@+id/txt_spot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".55"
+                    android:text=""
+                    android:textColor="@color/blackcolor"
+                    android:textSize="12dp"
+                    tools:ignore="SpUsage" />
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+
+        tools:ignore="InefficientWeight">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Enter Notes:"
+            android:textColor="@color/blackcolor"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/editext_background"
+            android:gravity="top|left"
+            android:imeOptions="actionDone"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:ignore="RtlHardcoded,TextFields" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="80dp">
+
+            <EditText
+                android:id="@+id/walk_around_notes"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/round_corner"
+                android:gravity="start"
+                android:paddingRight="30dp"
+                android:textSize="13dp" />
+
+            <ImageView
+                android:id="@+id/img_note"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center|end"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/mic" />
+
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+
+            android:id="@+id/Capture_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Gallery
+                android:id="@+id/Image_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="left"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lrn_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <com.ebs.rental.uidesigns.MaterialRippleLayout
+            style="@style/RippleStyle"
+            android:layout_width="0dp"
+            android:id="@+id/ripple_avail_btn"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            >
+
+
+            <Button
+                android:id="@+id/btn_available_parking"
+                style="@style/btnStyleGenoa"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_button_corner"
+                android:text="Available Parking"
+                android:padding="1dp"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+        </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+        <com.ebs.rental.uidesigns.MaterialRippleLayout
+            style="@style/RippleStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            >
+
+
+            <Button
+                android:id="@+id/btn_capture"
+                style="@style/btnStyleGenoa"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_button_corner"
+                android:text="@string/walkaround"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+        </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+        <com.ebs.rental.uidesigns.MaterialRippleLayout
+            style="@style/RippleStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1">
+
+
+            <Button
+                android:id="@+id/btn_next"
+                style="@style/btnStyleGenoa"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_button_corner"
+                android:gravity="center"
+                android:text="Next"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+        </com.ebs.rental.uidesigns.MaterialRippleLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/partsverification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/partscheck"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:padding="5dp"
+        android:textSize="18sp"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/partsimage"
+        android:layout_width="@dimen/image_capture_width"
+        android:layout_height="@dimen/image_capture_height"
+        android:gravity="right"
+        android:contentDescription="@string/partsimage"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:layout_marginBottom="@dimen/list_bottom_margin"
+        android:src="@drawable/enabled_camera"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded" />
+
+</LinearLayout>

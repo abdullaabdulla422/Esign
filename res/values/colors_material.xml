@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Purple -->
+    <color name="material_purple_300">#ab6bac</color>
+
+    <!-- Deep Purple -->
+
+    <!-- Red -->
+
+    <!-- Pink -->
+
+    <!-- Indigo -->
+
+    <!-- Blue -->
+
+    <!-- Light Blue -->
+
+    <!-- Cyan -->
+
+    <!-- Teal -->
+
+    <!-- Green -->
+
+    <!-- Light Green -->
+
+    <!-- Lime -->
+
+    <!-- Light Yellow -->
+
+    <!-- Yellow -->
+
+    <!-- Orange -->
+
+    <!-- Deep Orange -->
+
+    <!-- Grey -->
+    <color name="material_grey_200">#eeeeee</color>
+    <color name="material_grey_300" tools:ignore="PrivateResource">#e0e0e0</color>
+    <color name="material_grey_700">#616161</color>
+
+    <!-- Blue Grey -->
+
+    <!-- Brown -->
+
+</resources>

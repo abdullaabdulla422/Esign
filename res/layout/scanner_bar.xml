@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/material_blue_800"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="EBS Rental Inspection"
+         android:textColor="@android:color/white"
+       android:textSize="18dp"
+        android:singleLine="true"
+        android:gravity="center"
+        tools:ignore="Deprecated,HardcodedText,SpUsage" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/back"
+
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_toRightOf="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:text="Back"
+         android:textColor="@android:color/white"
+
+
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+</RelativeLayout>

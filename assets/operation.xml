@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<equipment>
+    
+<part id="1">
+<partname>ENGINE (START, RUN, STOP)</partname>
+<type>spinner</type>
+</part>
+
+<part id="2">
+<partname>BRAKE &amp; PARKING BRAKE</partname>
+<type>spinner</type>
+</part>
+
+<part id="3">
+<partname>CONTROLS &amp; SWITCHES</partname>
+<type>spinner</type>
+</part>
+
+<part id="4">
+<partname>LIGHTS, HORN, B.U. ALARM</partname>
+<type>spinner</type>
+</part>
+
+<part id="5">
+<partname>SEAT BELT / SAFETY CHAIN</partname>
+<type>spinner</type>
+</part>
+
+<part id="6">
+<partname>DRIVE (FWD/BCK/R/L)</partname>
+<type>spinner</type>
+</part>
+
+<part id="7">
+<partname>LIFT (FORKS/BOOM/PLATFORM)</partname>
+<type>spinner</type>
+</part>
+
+<part id="8">
+<partname>CAB OPERATION (SWIVEL)</partname>
+<type>spinner</type>
+</part>
+
+</equipment>
+
+
+
+
+

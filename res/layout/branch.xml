@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/white"
+    tools:ignore="Overdraw">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:layout_height="40dp"
+        android:background="@color/material_blue_800" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Transfer"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            tools:ignore="Deprecated,HardcodedText,SpUsage" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/back"
+
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_toRightOf="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:text="Back"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+
+
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </RelativeLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical"
+      tools:ignore="InefficientWeight">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Transfer From"
+          android:layout_margin="5dp"
+          android:textColor="@color/black"
+          android:textSize="14dp"
+          tools:ignore="HardcodedText,SpUsage" />
+      <!--<Spinner-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="wrap_content"-->
+          <!--android:id="@+id/select_transfer_branch"-->
+          <!--android:layout_margin="5dp">-->
+
+      <!--</Spinner>-->
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+
+          >
+          <EditText
+              android:layout_width="match_parent"
+              android:id="@+id/txt_select_branch"
+              android:layout_height="35dp"
+              android:editable="false"
+              android:hint="Select transfer Branch"
+              android:padding="5dp"
+              android:maxLength="50"
+              android:textSize="13dp"
+              android:background="@drawable/editext_background"
+              android:layout_weight="0.4"
+              android:singleLine="true"
+              tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+          <ImageView
+              android:layout_width="35dp"
+              android:layout_height="35dp"
+              android:visibility="gone"
+              android:layout_gravity="end|center"
+              android:id="@+id/img_select_branch"
+              android:src="@drawable/downarrow"
+              tools:ignore="ContentDescription" />
+      </FrameLayout>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Transfer To"
+          android:layout_margin="5dp"
+          android:textColor="@color/black"
+          android:textSize="14dp"
+          tools:ignore="HardcodedText,SpUsage" />
+      <!--<Spinner-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="wrap_content"-->
+
+          <!--android:id="@+id/select_customer_branch"-->
+          <!--android:layout_margin="5dp">-->
+
+      <!--</Spinner>-->
+
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+
+          >
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="35dp"
+              android:id="@+id/txt_select_customer_branch"
+              android:editable="false"
+              android:hint="Select Receving Branch"
+              android:padding="5dp"
+              android:maxLength="50"
+              android:textSize="13dp"
+              android:background="@drawable/editext_background"
+              android:layout_weight="0.4"
+              android:singleLine="true"
+              tools:ignore="Deprecated,HardcodedText,ObsoleteLayoutParam,SpUsage" />
+
+
+          <ImageView
+              android:id="@+id/img_select_customer_branch"
+              android:layout_width="32dp"
+              android:layout_height="35dp"
+              android:layout_gravity="end|center"
+              android:src="@drawable/down_arrow_2"
+              tools:ignore="ContentDescription" />
+      </FrameLayout>
+
+  </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:padding="1dp"
+        style="@style/btnStyleGenoa"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/button_margin"
+        android:background="@drawable/round_button_corner"
+        android:text="Next"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

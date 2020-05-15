@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress ALL -->
+<equipmentcheck>
+<part id="12345"></part>
+<checklists>
+	<checklist page="1">
+		<checkitem id="1" label="ENGINE (START, RUN, STOP)" controltype="spinner" required="0" imageallowed="0"></checkitem>
+		<checkitem id="2" label="BRAKE  &amp; PARKING BRAKE)" controltype="checkbox"  required="1" imageallowed="1"> </checkitem>
+		<checkitem id="3" label="CONTROLS &amp; SWITCHES" controltype="textarea"  required="1" imageallowed="1"> </checkitem>
+		<checkitem id="4" label="LIGHTS, HORN, B.U. ALARM" controltype="textbox"  required="0" imageallowed="0"> </checkitem>
+		<checkitem id="5" label="SEAT BELT / SAFETY CHAIN" controltype="spinner"  required="1" imageallowed="1"> </checkitem>
+		<checkitem id="6" label="DRIVE (FWD/BCK/R/L)" controltype="radio"  required="0" imageallowed="0"> </checkitem>
+		<checkitem id="7" label="LIFT (FORKS/BOOM/PLATFORM)" controltype="spinner"  required="0" imageallowed="1"> </checkitem>
+		<checkitem id="8" label="CAB OPERATION (SWIVEL)" controltype="spinner" required="1" imageallowed="1"> </checkitem>
+	</checklist>
+	<checklist page="2">
+		<checkitem id="1" label="ENGINE (START, RUN, STOP)" controltype="radio" required="1" imageallowed="1"></checkitem>
+		<checkitem id="2" label="BRAKE  &amp; PARKING BRAKE)" controltype="textbox"  required="1" imageallowed="1"> </checkitem>
+		<checkitem id="3" label="CONTROLS &amp; SWITCHES" controltype="checkbox"  required="1" imageallowed="1"> </checkitem>
+		<checkitem id="4" label="LIGHTS, HORN, B.U. ALARM" controltype="textarea"  required="0" imageallowed="1"> </checkitem>
+		<checkitem id="5" label="SEAT BELT / SAFETY CHAIN" controltype="checkbox"  required="1" imageallowed="1"> </checkitem>
+		<checkitem id="6" label="DRIVE (FWD/BCK/R/L)" controltype="textarea"  required="0" imageallowed="1"> </checkitem>
+		<checkitem id="7" label="LIFT (FORKS/BOOM/PLATFORM)" controltype="checkbox"  required="0" imageallowed="1"> </checkitem>
+		<checkitem id="8" label="CAB OPERATION (SWIVEL)" controltype="spinner" required="1" imageallowed="1"> </checkitem>
+	</checklist>
+	<checklist page="3">
+		<checkitem id="1" label="ENGINE (START, RUN, STOP)" controltype="spinner" required="1" imageallowed="1"></checkitem>
+		<checkitem id="2" label="BRAKE  &amp; PARKING BRAKE)" controltype="spinner"  required="1" imageallowed="1"> </checkitem>
+		<checkitem id="3" label="CONTROLS &amp; SWITCHES" controltype="textbox"  required="1" imageallowed="1"> </checkitem>
+		<checkitem id="4" label="LIGHTS, HORN, B.U. ALARM" controltype="spinner"  required="0" imageallowed="1"> </checkitem>
+		<checkitem id="5" label="SEAT BELT / SAFETY CHAIN" controltype="textarea"  required="1" imageallowed="1"> </checkitem>
+		<checkitem id="6" label="DRIVE (FWD/BCK/R/L)" controltype="spinner"  required="0" imageallowed="1"> </checkitem>
+		<checkitem id="7" label="LIFT (FORKS/BOOM/PLATFORM)" controltype="textbox"  required="0" imageallowed="1"> </checkitem>
+		<checkitem id="8" label="CAB OPERATION (SWIVEL)" controltype="spinner" required="1" imageallowed="1"> </checkitem>
+	</checklist>
+	<checklist page="4">
+		<checkitem id="1" label="ENGINE (START, RUN, STOP)" controltype="radio" required="1" imageallowed="1"></checkitem>
+		<checkitem id="2" label="BRAKE  &amp; PARKING BRAKE)" controltype="radio"  required="1" imageallowed="1"> </checkitem>
+		<checkitem id="3" label="CONTROLS &amp; SWITCHES" controltype="checkbox"  required="1" imageallowed="1"> </checkitem>
+		<checkitem id="4" label="LIGHTS, HORN, B.U. ALARM" controltype="textarea"  required="0" imageallowed="1"> </checkitem>
+		<checkitem id="5" label="SEAT BELT / SAFETY CHAIN" controltype="spinner"  required="1" imageallowed="1"> </checkitem>
+		<checkitem id="6" label="DRIVE (FWD/BCK/R/L)" controltype="textbox"  required="0" imageallowed="1"> </checkitem>
+		<checkitem id="7" label="LIFT (FORKS/BOOM/PLATFORM)" controltype="radio"  required="0" imageallowed="1"> </checkitem>
+		<checkitem id="8" label="CAB OPERATION (SWIVEL)" controltype="radio" required="1" imageallowed="1"> </checkitem>
+	</checklist>
+	
+	
+</checklists>
+</equipmentcheck>

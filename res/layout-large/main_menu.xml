@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_blue_800"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Logout"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight=".75"
+                android:gravity="center"
+                android:text="E-sign"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:background="@drawable/round_corner"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear_inspection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_inspection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inspection"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SpUsage" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/material_blue" />
+
+        <LinearLayout
+            android:id="@+id/linear_orders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orders"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/material_blue">
+
+        </View>
+
+
+        <LinearLayout
+            android:id="@+id/linear_transportation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_transportation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transportation"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+            style="@style/RippleStyle"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+
+            android:layout_margin="10dp"
+
+            app:rippleColor="@color/main_color_grey_200">
+
+            <Button
+                android:id="@+id/checkin"
+                style="@style/ButtonStyle.RaisedEmpty"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_button_corner"
+                android:text="Inspection"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+        </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+        <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+            style="@style/RippleStyle"
+            android:layout_width="200dp"
+
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            app:rippleColor="@color/main_color_grey_200">
+
+            <Button
+                android:id="@+id/workorderquotes"
+                style="@style/ButtonStyle.RaisedEmpty"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_button_corner"
+                android:text="Equipment Transfer"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+        </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+
+        <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+            style="@style/RippleStyle"
+            android:layout_width="200dp"
+
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            app:rippleColor="@color/main_color_grey_200">
+
+            <Button
+                android:id="@+id/parts"
+                style="@style/ButtonStyle.RaisedEmpty"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_button_corner"
+                android:text="Part Orders"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+        </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+        <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+            style="@style/RippleStyle"
+            android:layout_width="200dp"
+
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            app:rippleColor="@color/main_color_grey_200">
+
+            <Button
+                android:id="@+id/rentalorders"
+                style="@style/ButtonStyle.RaisedEmpty"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_button_corner"
+                android:text="Rental Orders"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+        </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+
+        <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+            style="@style/RippleStyle"
+            android:layout_width="200dp"
+
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            app:rippleColor="@color/main_color_grey_200">
+
+            <Button
+                android:id="@+id/transport"
+                style="@style/ButtonStyle.RaisedEmpty"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_button_corner"
+                android:text="Transportation"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+        </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="40dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_weight=".7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.ebs.rental.uidesigns.Spinnerview
+                    android:id="@+id/spr_inspection_type"
+                    android:layout_weight=".3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    custom:linecolor="@color/material_blue"
+                    custom:Textsize="16dp"
+                    android:layout_marginLeft="3dp"
+                    >
+                </com.ebs.rental.uidesigns.Spinnerview>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:id="@+id/linear_checklist"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Checklist"
+                    android:layout_weight=".7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.ebs.rental.uidesigns.Spinnerview
+                    android:id="@+id/spinner_checklist"
+                    android:layout_weight=".3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    custom:linecolor="@color/material_blue"
+                    custom:Textsize="16dp"
+                    android:layout_marginLeft="3dp"
+                    >
+                </com.ebs.rental.uidesigns.Spinnerview>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            >
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Equip Id"
+                    android:textSize="16dp"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_weight=".3"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:background="@drawable/editext_background_underline"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_equipment_id"
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".6"
+                        android:cursorVisible="false"
+                        android:singleLine="true"
+                        android:hint="Type EquipID or Click Scan"
+                        android:maxLength="7"
+                        android:background="@null"
+                        android:textColor="@color/primary_text"
+                        android:textSize="16dp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_eqipment_scan"
+                        android:layout_width="0dp"
+                        android:layout_height="27dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/search"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|end"
+            android:layout_margin="5dp"
+            >
+
+
+            <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+                style="@style/RippleStyle"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_gravity="start"
+
+                >
+
+                <Button
+                    android:id="@+id/btn_submit_inspection"
+                    style="@style/btnStyleGenoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="@drawable/round_button_corner"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+            </com.ebs.rental.uidesigns.MaterialRippleLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_order_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="40dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Type"
+                    android:layout_weight=".7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.ebs.rental.uidesigns.Spinnerview
+                    android:id="@+id/spinner_order_type"
+                    android:layout_weight=".3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    custom:linecolor="@color/material_blue"
+                    custom:Textsize="16dp"
+
+                    >
+                </com.ebs.rental.uidesigns.Spinnerview>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="40dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Branch"
+                    android:layout_weight=".7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/ac_txt_order_Branch"
+                    android:layout_weight=".3"
+                    android:layout_width="match_parent"
+                    android:textSize="18dp"
+                    android:cursorVisible="false"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/editext_background_underline"
+                    android:layout_marginLeft="3dp"
+                    >
+                </EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:weightSum="1"
+            >
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="40dp">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:padding="2dp"
+                    android:text="Branch"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ac_txt_order_gBranch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight=".8"
+                    android:enabled="false"
+                    android:gravity="start"
+                    android:cursorVisible="false"
+                    android:inputType="text"
+                    android:textColor="@color/primary_text"
+                    android:background="@drawable/editext_background_underline"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal|end"
+            android:padding="2dp">
+
+
+            <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+                style="@style/RippleStyle"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_gravity="start"
+
+
+                >
+
+                <Button
+                    android:id="@+id/btn_order_search"
+                    style="@style/btnStyleGenoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="@drawable/round_button_corner"
+                    android:gravity="center"
+                    android:text="Search"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+            </com.ebs.rental.uidesigns.MaterialRippleLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_margin="5dp"
+            android:weightSum="1"
+            android:background="@drawable/round_button_corner"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:text="Branch"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:layout_margin="2dp"/>
+            <TextView
+                android:layout_weight=".9"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:text="Branch Name"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/workorder_list"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:tabIndicatorColor="@color/material_blue"
+            app:tabTextAppearance="@style/MineCustomTabTextLarge"
+            app:tabSelectedTextColor="@color/white"
+            android:splitMotionEvents="false"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabTextColor="@color/black"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_corner"
+            app:tabBackground="@drawable/tab_background"
+            app:tabMaxWidth="0dp"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

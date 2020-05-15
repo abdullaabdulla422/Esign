@@ -1,0 +1,182 @@
+<!--suppress ALL -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ebs.rental.general.EBSRentalInspection"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/material_blue_800" >
+
+
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/back"
+
+            />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_toRightOf="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="50dp"
+            android:text="Scan Product"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/select_rental"
+                android:layout_gravity="center"
+                android:text="Rental"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/select_general"
+                android:layout_gravity="center"
+                android:text="General"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/select_equipment"
+                android:text="Transfer"
+                android:layout_weight="1"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/material_blue_800"
+        android:layout_marginTop="2dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/bottom_margin"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+
+
+        <EditText
+            android:id="@+id/edt_equipmentId"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edittextHeight"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:gravity="left"
+            android:hint="Type Product ID or Click Scan "
+            android:imeOptions="flagNoFullscreen"
+            android:inputType="text"
+            android:layout_marginRight="1dp"
+            android:padding="@dimen/textPadding"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textfieldsize" >
+        </EditText>
+
+
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            style="@style/btnStyleGenoa"
+            android:background="@drawable/search"
+            android:layout_marginTop="1dp"
+             android:layout_gravity="center"
+           />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textSize="@dimen/textfieldsize"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:background="@android:color/white"
+        android:layout_weight="1">
+    </TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/material_blue_800"
+        android:layout_marginBottom="2dp"
+        />
+
+    <com.ebs.rental.uidesigns.MaterialRippleLayout
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        style="@style/RippleStyle"
+        >
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/btnStyleGenoa"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/round_button_corner"
+        android:text="Submit" />
+
+    </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+
+</LinearLayout>
+

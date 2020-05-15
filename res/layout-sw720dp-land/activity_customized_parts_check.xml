@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="15" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/material_blue_800"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:visibility="visible"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rentalseting"
+            android:visibility="gone"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/rentalcompanyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:maxEms="10"
+            android:textColor="@android:color/white"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="CompanyName"
+            android:textSize="23dp"
+            tools:ignore="Deprecated,HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage" />
+
+
+        <TextView
+            android:id="@+id/orderno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/rentalcompanyname"
+            android:layout_alignBottom="@+id/rentalcompanyname"
+            android:layout_toLeftOf="@+id/settings"
+            android:paddingRight="20dp"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="18dp"
+            tools:ignore="Deprecated,RelativeOverlap,RtlHardcoded,RtlSymmetry,SpUsage" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/linearScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="15"
+        android:orientation="vertical"
+        tools:context=".MainActivity" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/linearMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+                <!--
+    <RelativeLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/btnnextpress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Next" />
+
+        <Button
+            android:id="@+id/btnsubmitpress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/btnbackpress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="back" />
+
+    </RelativeLayout>
+                -->
+            </LinearLayout>
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                layout="@layout/transportation_footer"
+                android:background="#000000" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

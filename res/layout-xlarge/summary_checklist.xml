@@ -1,0 +1,479 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  android:background="@color/white"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:layout_height="50dp"
+        android:background="@color/material_blue_800" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Rental Summary"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="23dp"
+            android:singleLine="true"
+            android:gravity="center"
+            tools:ignore="Deprecated,HardcodedText,SpUsage" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/back"
+
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_toRightOf="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginRight="8dp"
+            android:text="Back"
+            android:textSize="23sp"
+            android:textColor="@android:color/white"
+
+
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:orientation="horizontal" >
+        
+        
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+          
+            android:text="Company Name:"
+        android:textSize="23sp"
+            tools:ignore="HardcodedText,SpUsage" />
+        
+     <TextView
+            android:id="@+id/Companyvalues"
+           android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+              android:textSize="23sp"
+            android:textColor="#2b2b2b"
+            android:text="companyvalues"
+         tools:ignore="HardcodedText,SpUsage" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+          
+            android:text="Contact:"
+        android:textSize="23sp"
+            tools:ignore="HardcodedText,SpUsage" />
+        
+     <TextView
+            android:id="@+id/Contactvalues"
+           android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+        
+             android:textColor="#2b2b2b"
+            android:textSize="23sp"
+            android:text="contactvalues"
+         tools:ignore="HardcodedText,SpUsage" />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+          
+            android:text="Date:"
+        android:textSize="23sp"
+            tools:ignore="HardcodedText,SpUsage" />
+        
+     <TextView
+            android:id="@+id/datevalues"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+      
+             android:textColor="#2b2b2b"
+            android:textSize="23sp"
+            android:text="date"
+         tools:ignore="HardcodedText,SpUsage" />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+          
+            android:text="Order # :"
+        android:textSize="23sp"
+            tools:ignore="HardcodedText,SpUsage" />
+        
+     <TextView
+            android:id="@+id/ordervalues"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+         
+             android:textColor="#2b2b2b"
+            android:textSize="23sp"
+            android:text="Order"
+         tools:ignore="HardcodedText,SpUsage" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+            android:text="HourMeter:"
+        android:textSize="23sp"
+            tools:ignore="HardcodedText,SpUsage" />
+        
+     <TextView
+            android:id="@+id/hourmetervalues"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+            android:textSize="23sp"
+            
+             android:textColor="#2b2b2b"
+            android:text="Hourmeter"
+         tools:ignore="HardcodedText,SpUsage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+           
+            android:text="Fuel Level:"
+           android:textSize="23sp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:id="@+id/fuellevelvalues"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+          
+            android:textSize="23sp"
+             android:textColor="#2b2b2b"
+            android:text="values"
+            tools:ignore="HardcodedText,SpUsage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+            android:text="Due Status:"
+           
+            android:textSize="23sp"
+            tools:ignore="HardcodedText,SpUsage" />
+        
+        <TextView
+            android:id="@+id/duestatusvalues"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+            android:textSize="23sp"
+             android:textColor="#2b2b2b"
+          
+            android:text="values"
+            tools:ignore="HardcodedText,SpUsage" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+            android:text="Current Status"
+            android:textSize="23sp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:id="@+id/currentstatusvalues"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+         
+             android:textColor="#2b2b2b"
+            android:textSize="23sp"
+            android:text="values"
+            tools:ignore="HardcodedText,SpUsage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+            android:text="Sub Status :"
+           android:textSize="23sp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:id="@+id/substatusvalues"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+            android:textSize="23sp"
+             android:textColor="#2b2b2b"
+          
+            android:text="values"
+            tools:ignore="HardcodedText,SpUsage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+            android:text="Description :"
+            android:textSize="23sp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:id="@+id/descvalues"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+         android:layout_weight="1"
+             android:textColor="#2b2b2b"
+    
+            android:textSize="23sp"
+           
+            android:text="values"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            tools:ignore="HardcodedText,SpUsage" />
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_weight="1"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/dd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+          
+            android:text=""
+             android:textColor="#2b2b2b"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+   
+    
+
+
+ <!--    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" /> -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="13"
+        android:gravity="center"
+        tools:ignore="InefficientWeight">
+        <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+            style="@style/RippleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/btncancelsummary"
+                style="@style/btnStyleGenoa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/round_button_corner"
+
+                android:textSize="23sp"
+                android:text="Review"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+        </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+        <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+            style="@style/RippleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/btnreviewsummary"
+                style="@style/btnStyleGenoa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/round_button_corner"
+
+                android:textSize="23sp"
+                android:text="Review"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+        </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+
+    </LinearLayout>
+
+    <!--   <ListView
+          android:id="@+id/listView1"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1" >
+      </ListView> -->
+  <!--   <LinearLayout 
+        android:id="@+id/can"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+       <Button 
+        android:id="@+id/submit"
+        android:layout_width="100dp"
+       android:layout_marginLeft="30dp"
+          style="@style/btnStyleGenoa"
+        android:layout_height="wrap_content"
+        
+        android:text="Submit"/>
+        <Button 
+        android:id="@+id/cancel"
+        android:layout_width="100dp"
+        android:layout_marginLeft="20dp"
+           style="@style/btnStyleGenoa"
+        android:layout_height="wrap_content"
+        android:text="Cancel"/>
+        </LinearLayout>
+        -->
+    
+
+  <!--   <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" /> -->
+ 
+
+   
+
+</LinearLayout>

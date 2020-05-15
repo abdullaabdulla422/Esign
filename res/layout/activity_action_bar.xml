@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/material_blue_800"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/back"
+        android:visibility="visible"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+         android:background="@drawable/rentalseting_white"
+        android:visibility="gone"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <TextView 
+        android:id="@+id/rentalcompanyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:maxEms="10"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+         android:textColor="@android:color/white"
+        android:paddingLeft="20dp"
+        android:singleLine="true"
+        android:text="CompanyName"
+        android:textSize="18dp"
+        tools:ignore="Deprecated,HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage" />
+
+
+    <TextView
+        android:id="@+id/orderno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rentalcompanyname"
+        android:layout_alignBottom="@+id/rentalcompanyname"
+        android:layout_toLeftOf="@+id/settings"
+        android:paddingRight="20dp"
+        android:textColor="@android:color/white"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="18dp"
+        tools:ignore="Deprecated,RelativeOverlap,RtlHardcoded,RtlSymmetry,SpUsage" />
+
+
+</RelativeLayout>

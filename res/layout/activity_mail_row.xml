@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:id="@+id/existing_layout"
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:id="@+id/txt_cusomter_name"
+            android:layout_weight="1.8"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mail"
+            android:id="@+id/txt_customer_mail"
+            android:textColor="@color/black"
+            android:layout_weight="1.2"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText"  />
+        <CheckBox
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/select_mail"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:id="@+id/new_layout"
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="Name"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:id="@+id/edt_cusomter_name"
+            android:layout_marginRight="7dp"
+            android:padding="3dp"
+            android:background="@drawable/round_corner"
+            android:layout_weight="1.8"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/edt_customer_mail"
+            android:singleLine="true"
+            android:padding="3dp"
+            android:background="@drawable/round_corner"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:layout_weight="1.2"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText"  />
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/cross_icon"
+            android:id="@+id/delete_mail"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

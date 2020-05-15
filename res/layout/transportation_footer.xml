@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:gravity="bottom"
+        tools:ignore="RtlHardcoded,UselessParent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:weightSum="2">
+
+
+            <com.ebs.rental.uidesigns.MaterialRippleLayout
+                android:id="@+id/ripple3"
+                style="@style/RippleStyle"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+
+                >
+
+                <Button
+                    android:id="@+id/btnbackpress"
+                    style="@style/btnStyleGenoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/round_button_corner"
+
+                    android:padding="1dp"
+                    android:text="Back"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+            <com.ebs.rental.uidesigns.MaterialRippleLayout
+                android:id="@+id/ripple1"
+                style="@style/RippleStyle"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnnextpress"
+                    style="@style/btnStyleGenoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+
+                    android:background="@drawable/round_button_corner"
+                    android:text="Next"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+            <com.ebs.rental.uidesigns.MaterialRippleLayout
+                android:id="@+id/ripple2"
+                style="@style/RippleStyle"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+
+                >
+
+                <Button
+                    android:id="@+id/btnsubmitpress"
+                    style="@style/btnStyleGenoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/round_button_corner"
+                    android:padding="1dp"
+                    android:text="Next"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
+
+
+            </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_15_percent">#26ffffff</color>
+    <color name="white_30_percent">#4Dffffff</color>
+
+    <color name="main_color_300">@color/material_purple_300</color>
+
+    <color name="main_color_grey_200">@color/material_grey_200</color>
+    <color name="main_color_grey_300">@color/material_grey_300</color>
+    <color name="main_color_grey_700">@color/material_grey_700</color>
+    <color name="actionbar_opacity">#33000000</color>
+    <color name="grey">#EEEEEE</color>
+    <color name="material_blue">#007AE0</color>
+    <color name="material_blue_800_new">#007AFF</color>
+    <color name="material_blue_800">#007AE0</color>
+
+
+
+    <!-- PLEASE NOTE: Since adding transparency to already
+    defined colors is not supported through xml, we have
+    to add them manually. This means: we have used purple
+    color scheme, and this is where we use Purple500 color
+    to add transparency. If you were about to change color
+    scheme, also change Purple500 color from here. -->
+    <!-- 10 percent transparent Purple500 -->
+    <!-- 20 percent transparent Purple500 -->
+    <!-- 50 percent transparent Purple500 -->
+    <!-- Ex. If you use red color scheme, write down (#ef4437 is Red500 color):
+    <color name="main_color_500_10_percent">#1aef4437</color>
+    <color name="main_color_500_20_percent">#33ef4437</color>
+    <color name="main_color_500_50_percent">#80ef4437</color>
+    -->
+
+
+    <color name="divider">#B6B6B6</color>
+
+</resources>

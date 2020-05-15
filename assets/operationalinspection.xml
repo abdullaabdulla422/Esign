@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<operationcheck>
+    
+<operation id="1">
+<operationname>ENGINE (START, RUN, STOP)</operationname>
+<type>spinner</type>
+</operation>
+
+<operation id="2">
+<operationname>BRAKE &amp; PARKING BRAKE</operationname>
+<type>spinner</type>
+</operation>
+
+<operation id="3">
+<operationname>CONTROLS &amp; SWITCHES</operationname>
+<type>spinner</type>
+</operation>
+
+<operation id="4">
+<operationname>LIGHTS, HORN, B.U. ALARM</operationname>
+<type>spinner</type>
+</operation>
+
+<operation id="5">
+<operationname>SEAT BELT / SAFETY CHAIN</operationname>
+<type>spinner</type>
+</operation>
+
+<operation id="6">
+<operationname>DRIVE (FWD/BCK/R/L)</operationname>
+<type>spinner</type>
+</operation>
+
+<operation id="7">
+<operationname>LIFT (FORKS/BOOM/PLATFORM)</operationname>
+<type>spinner</type>
+</operation>
+
+<operation id="8">
+<operationname>CAB OPERATION (SWIVEL)</operationname>
+<type>spinner</type>
+</operation>
+
+</operationcheck>
+
+
+
+
+

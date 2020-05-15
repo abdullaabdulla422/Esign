@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_box"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:background="@color/material_blue"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/header_title"
+            android:textSize="15dp"
+            android:text="Type"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/close_img"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical|end"
+            android:src="@drawable/round_cancel"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+    </FrameLayout>
+
+    <ListView
+        android:layout_weight="1"
+        android:dividerHeight="1dp"
+        android:divider="@color/material_blue"
+        android:id="@+id/spinner_list"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/list_layout_animation">
+
+    </ListView>
+
+
+
+</LinearLayout>

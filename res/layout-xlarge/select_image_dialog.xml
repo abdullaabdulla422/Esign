@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:layout_marginTop="@dimen/top_margin"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:textSize="@dimen/textfieldsize"
+        android:visibility="gone"
+        android:text="@string/select_gallery"
+        tools:ignore="RtlHardcoded" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:background="@android:color/black"/>
+    
+     <TextView 
+         android:id="@+id/txt_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:textSize="@dimen/textfieldsize"
+        android:text="@string/take_photo"
+         tools:ignore="RtlHardcoded" />
+     <Button 
+         android:id="@+id/btn_cancel"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/button_height"
+         android:textSize="@dimen/textfieldsize"
+         android:background="@color/btn_colour"
+         android:text="@string/cancel"/>
+    
+
+</LinearLayout>

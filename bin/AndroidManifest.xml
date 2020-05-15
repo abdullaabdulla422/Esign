@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ebs.rental.general"
+    android:versionCode="8"
+    android:versionName="1.7" >
+ 
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+      <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/signature"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault.Light" >
+        <activity android:name="com.ebs.rental.general.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ebs.rental.general.InspectionActivity" >
+        </activity>
+        <activity android:name="com.ebs.rental.general.VisualInspection" >
+        </activity>
+        <activity android:name="com.ebs.rental.general.VerificationActivity" >
+        </activity>
+        <activity android:name="com.ebs.rental.general.CustomerListActivity" >
+        </activity>
+        <activity android:name="com.ebs.rental.general.RentalListActivity" >
+        </activity>
+        <activity android:name="com.ebs.rental.general.OperationalInspection" >
+        </activity>
+         <activity android:name="com.ebs.rental.general.RentalSignature" 
+              android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+        </activity>
+        <activity android:name="com.ebs.rental.general.Exiter" >
+        </activity> 
+        <activity
+            android:name="com.ebs.rental.general.CustomizedPartsCheck"
+            android:label="@string/title_activity_customized_parts_check"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.general.CustomizedOperationcheck"
+            android:label="@string/title_activity_customized_operationcheck" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.general.ScannerActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_scanner" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.general.RentalListSelector"
+            android:label="@string/title_activity_rental_list_selector" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.general.BarcodeReader"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ebs.rental.general.RentalRoot"
+            android:label="@string/title_activity_root" >
+        </activity>
+        <activity android:name="com.ebs.rental.general.ScannerRoot" >
+        </activity>
+        <activity android:name="com.ebs.rental.general.RentalFoot" >
+        </activity>
+        <activity android:name="com.ebs.rental.general.RawFileIncluder" >
+        </activity>
+        <activity android:name="com.ebs.rental.general.BaseFileIncluder" >
+        </activity>
+        <activity android:name="com.ebs.rental.general.EbsMenu" 
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.general.RetntalOrderBranch"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.general.RentalOrderSearch"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.general.RentalOrderOrderlist"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.general.RentalOrderCustomer"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.general.RentalOrderListDetail"
+             android:windowSoftInputMode="stateHidden" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.general.TearmsAndCondisions"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.general.Capture_Signature"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.general.CustomerMailDetails"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.parts.RentalPartsOrderBranch"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.parts.RentalPartsOrderSearch"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        </activity>
+          <activity
+            android:name="com.ebs.rental.parts.PartsOrderCustomer"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.parts.RentalPartsOrderlist"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        </activity>
+        
+        <activity 
+            android:name="com.ebs.rental.parts.RentalPartsOrderListDetail"
+             android:windowSoftInputMode="stateHidden" 
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.parts.PartsTermsAndConditions"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.parts.PartsCaptureSignature"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ebs.rental.parts.PartsMailDetails"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+        </activity>
+         <activity android:name="com.ebs.rental.general.Summaryactivity" 
+            >
+        </activity>
+         <activity android:name="com.ebs.rental.general.CheckInMailDetails"
+             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+              >
+        </activity>
+        <activity
+            android:name="com.dm.zbar.android.scanner.ZBarScannerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+    </application> 
+
+</manifest>

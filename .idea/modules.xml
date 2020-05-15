@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Esign_2.2.iml" filepath="$PROJECT_DIR$/Esign_2.2.iml" group="Esign_2.2" />
+      <module fileurl="file://$PROJECT_DIR$/zbar/zbar.iml" filepath="$PROJECT_DIR$/zbar/zbar.iml" group="Esign_2.2/zbar" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+     
+    
+
+    <TextView
+        android:id="@+id/txt_kpart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/equpment_serial_no"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/txt_equipment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/equpment_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     </LinearLayout>
+
+   <CheckBox 
+       android:id="@+id/itemCheckBox"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:layout_alignParentRight="true"
+       tools:ignore="RtlHardcoded" />
+
+    
+
+</RelativeLayout>

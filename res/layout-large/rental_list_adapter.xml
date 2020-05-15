@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:layout_marginTop="@dimen/top_margin" >
+
+        <TextView
+            android:id="@+id/shipto_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:singleLine="true"
+            android:text="@string/ship_to"
+            android:textSize="@dimen/textfieldsize"
+            tools:ignore="Deprecated" />
+
+        <TextView
+            android:id="@+id/rental_equipmentId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:singleLine="true"
+            android:text="@string/rental_equipment_id"
+            android:textSize="@dimen/textfieldsize"
+            tools:ignore="Deprecated,RtlHardcoded" />
+    </TableRow>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:layout_marginTop="@dimen/top_margin" >
+
+        <TextView
+            android:id="@+id/rentdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:singleLine="true"
+            android:text="@string/rent_date"
+            android:textSize="@dimen/textfieldsize"
+            tools:ignore="Deprecated" />
+
+        <!--
+             <TextView
+            android:id="@+id/rental_equipmentId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="Rental Equipment Id"
+            android:textSize="@dimen/textfieldsize" />
+        -->
+    </TableRow>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin"
+        android:text="@string/description"
+        android:textSize="@dimen/textfieldsize"
+        android:visibility="gone" />
+
+</LinearLayout>

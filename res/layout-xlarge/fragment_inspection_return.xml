@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:gravity="center"
+        android:background="@drawable/round_button_corner"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="@string/return_reason"
+        android:textSize="18dp" />
+
+    <CheckBox
+        android:id="@+id/chk_job_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:text="@string/job_complete"
+        android:textSize="@dimen/textfieldsize" />
+
+    <CheckBox
+        android:id="@+id/chk_equipment_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/equipmemt_failure"
+        android:textSize="@dimen/textfieldsize" />
+
+    <RadioGroup
+        android:id="@+id/rad_group_equipment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+        <RadioButton
+            android:id="@+id/rad_wear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/right_margin"
+            android:enabled="false"
+            android:text="@string/wear_tear"
+            tools:ignore="RtlHardcoded" />
+
+        <RadioButton
+             android:id="@+id/rad_breakage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/breakage" />
+    </RadioGroup>
+
+  
+
+   <CheckBox
+       android:id="@+id/chk_customer_damage"
+       android:layout_width="wrap_content"
+       android:layout_marginBottom="5dp"
+       android:layout_height="wrap_content"
+       android:enabled="false"
+       android:text="@string/customer_damage"
+       android:textSize="@dimen/textfieldsize" />
+
+   <RadioGroup
+	  android:id="@+id/rad_group_customer_damge"
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginLeft="10dp"
+	  android:layout_marginBottom="@dimen/bottom_margin"
+	  android:orientation="horizontal"
+       tools:ignore="RtlHardcoded">
+
+        <RadioButton
+            android:id="@+id/rad_rep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_marginRight="@dimen/right_margin"
+            android:text="@string/customer_rep"
+            tools:ignore="RtlHardcoded" />
+
+        <RadioButton
+             android:id="@+id/rad_operator"
+            android:layout_width="wrap_content"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_operator" />
+        
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chk_pm_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:text="@string/pm_other"
+        android:textSize="@dimen/textfieldsize" />
+
+</LinearLayout>

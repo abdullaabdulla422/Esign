@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+	<!-- Margins and Sizes used in Rental Inspection -->
+	    <dimen name="left_margin">10dp</dimen>
+	    <dimen name="right_margin">10dp</dimen>
+	    <dimen name="top_margin">10dp</dimen>
+	    <dimen name="list_top_margin">5dp</dimen>
+	    <dimen name="list_bottom_margin">5dp</dimen>
+	    <dimen name="bottom_margin">6dp</dimen>
+	    <dimen name="common_padding">10dp</dimen>
+	    <dimen name="textfieldsize">16sp</dimen>
+	<dimen name="header_height">40dp</dimen>
+	    <dimen name="button_height">35dp</dimen>
+	    <dimen name="button_margin">20dp</dimen>
+	    <dimen name="textPadding">10dp</dimen>
+	    <dimen name="edittextHeight">45dp</dimen>
+	    <dimen name="spinnerHeight">35dp</dimen>
+	<dimen name="image_capture_height">35dp</dimen>
+		<dimen name="image_capture_width">35dp</dimen>
+</resources>

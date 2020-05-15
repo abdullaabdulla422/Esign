@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:background="@drawable/dialog_box"
+    >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@color/material_blue_800"
+    android:orientation="horizontal"
+    android:layout_margin="3dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:layout_centerInParent="true"
+        android:textSize="16dp"
+        android:textColor="@color/whitecolor"
+        android:textStyle="bold"
+        android:padding="1dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        tools:ignore="HardcodedText,InefficientWeight,SpUsage" />
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/close_img"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical|end"
+        android:src="@drawable/round_cancel"
+        android:layout_centerInParent="true"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+</RelativeLayout>
+
+
+<TextView
+    android:id="@+id/dialog_receive"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:text="Check In"
+    android:textColor="@color/blackcolor"
+    android:textStyle="bold"
+    android:textSize="16sp"
+    tools:ignore="HardcodedText,SpUsage" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_gravity="center"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="@color/material_blue_800"
+    />
+
+<TextView
+    android:id="@+id/dialog_transfer"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:textColor="@color/blackcolor"
+    android:text="Check Out"
+    android:textStyle="bold"
+    android:textSize="16sp"
+    android:layout_marginBottom="5dp"
+    tools:ignore="HardcodedText,SpUsage" />
+
+</LinearLayout>

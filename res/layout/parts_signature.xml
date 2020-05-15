@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggradient"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/material_blue_800"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/backicon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/pViewbacktodelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|left"
+            android:gravity="center"
+            android:text="Back"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="5"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Signature"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/pSigname"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/editext_background"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:hint="@string/userName"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textSize="14sp"
+        tools:ignore="Deprecated,RtlHardcoded,RtlSymmetry" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutpSign"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="67.93"
+        android:background="@drawable/backgroundsignature"
+        android:orientation="horizontal"
+        android:padding="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutpSignBut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp">
+
+            <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+                style="@style/RippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/pnewSign"
+                    style="@style/btnStyleGenoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/round_button_corner"
+                    android:text="New Signature"
+                    tools:ignore="HardcodedText,InefficientWeight" />
+            </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutpSignBut1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+                style="@style/RippleStyle"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+
+                android:layout_weight="1">
+
+
+                <Button
+                    android:id="@+id/clearp"
+                    style="@style/btnStyleGenoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:padding="1dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/round_button_corner"
+                    android:text="Clear Signature"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </com.ebs.rental.uidesigns.MaterialRippleLayout>
+
+            <com.ebs.rental.uidesigns.MaterialRippleLayout
+
+                style="@style/RippleStyle"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+
+                android:layout_weight="1">
+
+
+                <Button
+                    android:id="@+id/pgetsign"
+                    style="@style/btnStyleGenoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="1dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/round_button_corner"
+                    android:text="Save Signature"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </com.ebs.rental.uidesigns.MaterialRippleLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/material_blue_800</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+      <style name="AlertTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:itemTextAppearance">@android:style/TextAppearance.Large.Inverse</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:alertDialogStyle">@android:style/Theme.Dialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textAppearanceListItem">@android:style/TextAppearance.Large.Inverse</item>
+        <item name="android:textAppearanceListItemSmall">@android:style/TextAppearance.Large.Inverse</item>
+        <item name="android:buttonBarStyle">@android:style/Holo.ButtonBar.AlertDialog</item>
+    </style>
+
+    <style name="Application_Theme" parent="@android:style/Theme.Holo">
+         <item name="android:alertDialogTheme">@style/AlertTheme</item>
+    </style>
+
+    <style name="TransparentToolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support Library compability -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppOverlayTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="colorPrimary">@color/primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields e.g. FloatActionButton -->
+        <item name="colorAccent">@color/accent</item>
+        <!-- Title Text Color -->
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <!-- color of the menu overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+    </style>
+    
+<style name="btnStyleGenoa" parent="@android:style/Widget.Button">
+       <item name="android:textSize">15sp</item>
+       <item name="android:textStyle">bold</item>
+       <item name="android:textColor">#FFFFFF</item>
+       <item name="android:gravity">center</item>
+       <item name="android:shadowColor">#000000</item>
+       <item name="android:shadowDx">1</item>
+       <item name="android:shadowDy">1</item>
+       <item name="android:shadowRadius">0.6</item>
+       <item name="android:background">@color/material_blue_800</item>
+       <item name="android:padding">8dip</item>
+   </style>
+
+    <style name="ButtonStyle.RaisedEmpty" parent="@style/ButtonStyle">
+        <item name="android:background">@drawable/selector_background_empty</item>
+        <item name="android:textColor">@drawable/selector_text_empty</item>
+    </style>
+
+    <style name="ButtonStyle" parent="@android:style/TextAppearance.Widget.Button">
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="ButtonStyle.RaisedFull" parent="@style/ButtonStyle">
+        <item name="android:background">@drawable/selector_background_full</item>
+        <item name="android:textColor">@drawable/selector_text_full</item>
+    </style>
+
+    <style name="RippleStyle">
+        <item name="rippleOverlay">true</item>
+        <item name="rippleColor">@color/main_color_grey_300</item>
+        <item name="rippleAlpha">0.7</item>
+        <item name="rippleDimension">35dp</item>
+        <item name="rippleHover">true</item>
+        <item name="rippleDuration">200</item>
+        <item name="rippleFadeDuration">50</item>
+        <item name="rippleBackground">@android:color/transparent</item>
+        <item name="rippleDelayClick">true</item>
+        <item name="ripplePersistent">false</item>
+        <item name="rippleInAdapter">false</item>
+    </style>
+
+
+    <style name="MineCustomTabText" >
+
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginBottom">2dp</item>
+
+
+    </style>
+  <style name="MineCustomTabTextLarge" >
+
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginBottom">2dp</item>
+
+
+    </style>
+    <style name="MineCustomTabTextXLarge" >
+
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginBottom">2dp</item>
+
+
+    </style>
+
+
+
+    <style name="Base.Widget.Design.CustomTabLayout" parent="android:Widget">
+        <item name="tabBackground">@drawable/tab_background</item>
+        <!--<item name="tabIndicatorColor">#ff00ff</item>-->
+        <!--<item name="tabIndicatorHeight">0dp</item>-->
+    </style>
+
+
+</resources>

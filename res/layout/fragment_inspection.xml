@@ -1,0 +1,132 @@
+<!--suppress ALL -->
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/common_padding"
+    tools:context="com.ebscssp.main.InspectionActivity$PlaceholderFragment" >
+
+    <EditText
+        android:id="@+id/edt_insert_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittextHeight"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:background="@drawable/editext_background"
+        android:focusableInTouchMode="true"
+        android:gravity="left"
+        android:hint="@string/date"
+        android:imeOptions="flagNoFullscreen"
+        android:inputType="date"
+        android:padding="@dimen/textPadding"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textfieldsize" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_insert_equipment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittextHeight"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:background="@drawable/editext_background"
+        android:gravity="left"
+        android:hint="@string/equipmentId"
+        android:imeOptions="flagNoFullscreen"
+        android:inputType="none"
+        android:padding="@dimen/textPadding"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textfieldsize" />
+
+    <EditText
+        android:id="@+id/edt_insert_hourmeter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittextHeight"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:background="@drawable/editext_background"
+        android:gravity="left"
+        android:hint="@string/hourMeter"
+        android:imeOptions="flagNoFullscreen"
+        android:inputType="number"
+        android:padding="@dimen/textPadding"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textfieldsize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/right_margin"
+            android:text="@string/location"
+            android:textSize="@dimen/textfieldsize" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rad_onsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/right_margin"
+                android:checked="true"
+                android:text="@string/onsite"
+                android:buttonTint="@color/material_blue_800"
+                android:textSize="@dimen/textfieldsize" />
+
+            <RadioButton
+                android:id="@+id/rad_yard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yard"
+                android:buttonTint="@color/material_blue_800"
+                android:textSize="@dimen/textfieldsize" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rad_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/right_margin"
+            android:checked="true"
+            android:text="@string/delivery"
+            android:buttonTint="@color/material_blue_800"
+            android:textSize="@dimen/textfieldsize" />
+
+        <RadioButton
+            android:id="@+id/rad_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inspection_return"
+            android:buttonTint="@color/material_blue_800"
+            android:textSize="@dimen/textfieldsize" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/deli_or_ret"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_weight="1"
+                android:text="@string/engine"
+                android:textSize="@dimen/textfieldsize"
+                tools:ignore="RtlHardcoded" />
+
+            <Spinner
+                android:id="@+id/spin_engine"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spinnerHeight"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/material_blue_800"
+                android:entries="@array/inspection_check" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_weight="1"
+                android:text="@string/brake"
+                android:textSize="@dimen/textfieldsize"
+                tools:ignore="RtlHardcoded" />
+
+            <Spinner
+                android:id="@+id/spin_brake"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spinnerHeight"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/material_blue_800"
+                android:entries="@array/inspection_check" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_weight="1"
+                android:text="@string/controls"
+                android:textSize="@dimen/textfieldsize"
+                tools:ignore="RtlHardcoded" />
+
+            <Spinner
+                android:id="@+id/spin_controls"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spinnerHeight"
+                android:backgroundTint="@color/material_blue_800"
+                android:layout_weight="0.5"
+                android:entries="@array/inspection_check" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_weight="1"
+                android:text="@string/lights"
+                android:textSize="@dimen/textfieldsize"
+                tools:ignore="RtlHardcoded" />
+
+            <Spinner
+                android:id="@+id/spin_lights"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spinnerHeight"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/material_blue_800"
+                android:entries="@array/inspection_check" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_weight="1"
+                android:text="@string/seatbelt"
+                android:textSize="@dimen/textfieldsize"
+                tools:ignore="RtlHardcoded" />
+
+            <Spinner
+                android:id="@+id/spin_seatbelt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spinnerHeight"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/material_blue_800"
+                android:entries="@array/inspection_check" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_weight="1"
+                android:text="@string/drive"
+                android:textSize="@dimen/textfieldsize"
+                tools:ignore="RtlHardcoded" />
+
+            <Spinner
+                android:id="@+id/spin_drive"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spinnerHeight"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/material_blue_800"
+                android:entries="@array/inspection_check" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_weight="1"
+                android:text="@string/lift"
+                android:textSize="@dimen/textfieldsize"
+                tools:ignore="RtlHardcoded" />
+
+            <Spinner
+                android:id="@+id/spin_lift"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spinnerHeight"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/material_blue_800"
+                android:entries="@array/inspection_check" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_weight="1"
+                android:text="@string/cab"
+                android:textSize="@dimen/textfieldsize"
+                tools:ignore="RtlHardcoded" />
+
+            <Spinner
+                android:id="@+id/spin_cab"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spinnerHeight"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/material_blue_800"
+                android:entries="@array/inspection_check" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:text="@string/hugg"
+            android:textSize="@dimen/textfieldsize" />
+
+        <EditText
+            android:id="@+id/edt_hugg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:background="@drawable/editext_background"
+            android:gravity="top|left"
+            android:hint="@string/notes"
+            android:inputType="textMultiLine|textCapSentences"
+            android:lines="3"
+            android:padding="@dimen/textPadding"
+            android:scrollHorizontally="false"
+            tools:ignore="RtlHardcoded">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:text="@string/inspection_descrepencies"
+            android:textSize="@dimen/textfieldsize" />
+
+        <EditText
+            android:id="@+id/edt_descrepencies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editext_background"
+            android:gravity="top|left"
+            android:hint="@string/inspection_description"
+            android:inputType="textMultiLine|textCapSentences"
+            android:lines="3"
+            android:padding="@dimen/textPadding"
+            android:scrollHorizontally="false"
+            tools:ignore="RtlHardcoded">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_oper_next"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/right_margin"
+            android:layout_marginTop="@dimen/top_margin"
+            android:background="@drawable/round_button_corner"
+            android:text="@string/next"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+   <TextView
+       android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:gravity="center"
+        android:padding="@dimen/textPadding"
+       android:background="@drawable/round_button_corner"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="@string/delivery"
+        android:textSize="13dp" />
+
+    <CheckBox
+        android:id="@+id/chk_replacement"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:layout_height="wrap_content"
+        android:text="@string/replacement"
+        android:textSize="@dimen/textfieldsize" />
+
+    <CheckBox
+        android:id="@+id/chk_operator_avail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:text="@string/operator_availabilty"
+        android:textSize="@dimen/textfieldsize" />
+
+</LinearLayout>
